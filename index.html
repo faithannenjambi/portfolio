@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith Njambi</title>
+    <script src="https://kit.fontawesome.com/71c92c08a5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="section1">
+
+        <nav>
+
+            <div></div>
+
+            <div class="navigations">
+                <a href="">HOME</a>
+                <a href="">ABOUT</a>
+                <a href="">PROJECTS</a>
+                <a href="">CONTACT</a>
+            </div>
+        </nav>
+
+        <div class="intro">
+            <div>
+                <p class="intro-text">NJAMBI FAITH <span>A WEB DEVELOPER</span></p>
+            </div>
+
+            <div>
+                <a class="btn" href="">Resume</a>
+            </div>
+
+            <div class="icons">
+                <div class="icon">
+                    <a href=""><img src="Assets/icons/github.png" alt="github icon"></a>
+                </div>
+                <div class="icon">
+                    <a href=""><img src="Assets/icons/linkedin.png" alt="linkedin icon"></a>                   
+                </div>
+                <div class="icon">
+                    <a href=""><img src="Assets/icons/email.png" alt="email icon"></a>                   
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section2">
+        <div class="about-text">
+            <p class="header-text">About Me</p>
+            <p>
+                I'm Njambi <i class="fa-regular fa-face-smile"></i> , a lover of life.
+                <br>Professionally, I am a web developer and a data enthusiast who combines
+                curiosity, creativity, and analytical thinking to tackle big 
+                picture challenges. <br>
+                I am passionate about women empowerment and I actively sort ways to
+                contribute in shaping a feminist digital future. <br>
+                Beyond the professional realm, I am a lover of poetry. I enjoy this art 
+                of capturing emotions and ideas in a rythmic language, creating beauty 
+                through words. I am a part-time story teller, full-time sunset/sunrise 
+                enthusiast and occasional dance floor conqueror.
+            </p>
+
+            <div class="title">
+                <p class="title-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="title-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="content active-tab" id="skills">
+
+                <ul>
+                    <li><span>HTML,CSS,JavaScript</span> <br>
+                    Creating and styling interactive web pages</li>
+                    <li><span>Responsive Design</span> <br>
+                    Designing websites to adapt to various screen sizes and devices</li>
+                    <li><span>Git & Github</span> <br>
+                    Managing codebase and collaborating with team members</li>
+                    <li><span>Front-end Design Tools(Figma, Adobe XD,Canva)</span> <br>
+                    Creating wireframes, prototypes and UI/UX designs</li>
+                    <li><span>Perfomance Optimization</span></li>
+                    <li><span>Search Engine Optimization</span></li>
+                </ul>
+            </div>
+
+            <div class="content" id="education">
+
+                <ul>
+                    <li><span>2024</span> <br> Data Analytics Training (ongoing) <br>
+                    ALX, Nairobi</li>
+                    <li><span>2024</span> <br> Fullstack Development Bootcamp <br>
+                    Visiola Foundation</li>
+                    <li><span>2023</span> <br> Bachelor of Computer Applications <br>
+                    KIIT University, India</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="about-image">
+            <img src="Assets/about_me.jpg" alt="profile pic">
+        </div>
+    </div>
+
+    <div class="section3">
+
+        <p class="header-text">Projects</p>
+
+        <div class="projects">
+            <div class="project">
+
+                <div class="project-img">
+                    <a href=""><img src="Assets/jewelrysite.png" alt=""></a>
+                </div>
+                <a class="subtext" href="">Jewelry Online Shop Website</a>
+                <p class="small-text">Website for a Jewelry shop</p>
+            </div>
+            <div class="project">
+
+                <div class="project-img">
+                    <a href=""><img src="Assets/gasapp.png" alt=""></a>                  
+                </div>
+                <a class="subtext" href="">Gas Refill Ordering App</a>
+                <p class="small-text">Simple app to order for gas online</p>
+            </div>
+            <div class="project">
+
+                <div class="project-img">
+                    <a href=""><img src="Assets/gassite.png" alt=""></a>                  
+                </div>
+                <a class="subtext" href="">Gas Refill Ordering - Website</a>
+                <p class="small-text">Website for a Gas Ordering App</p>
+            </div>
+        </div>
+
+        <div class="project-btn">
+            <a href="" class="btn">See more</a>
+        </div>
+        
+    </div>
+
+    <div class="section4">
+
+        <p class="header-text center">Contact me</p>
+
+        <div class="contact-form">
+
+            <form>
+
+                <div>
+                    <label for="email"></label>
+                    <input type="email" name="email" placeholder="EMAIL" required>
+                </div>
+                
+                <div>
+                    <label for="subject"></label>
+                    <input type="text" name="subject" placeholder="SUBJECT" required>
+                </div>
+                
+                <div>
+                    <label for="message"></label>
+                    <textarea name="message" id="" rows="6" placeholder="MESSAGE" required></textarea>
+                </div>
+
+                <button class="btn form-btn" type="submit">Send message</button>
+                
+            </form>
+        </div>
+    </div>
+
+    <footer>
+
+        <div>
+            <p class="small-text">&copy; Faith Anne Njambi</p>
+        </div>
+
+        <div class="footer-icons">
+            <div class="footer-icon">
+                <a href=""><img src="Assets/icons/linkedin.png" alt=""></a>
+            </div>
+            <div class="footer-icon">
+                <a href=""><img src="Assets/icons/email.png" alt=""></a>
+            </div>
+            <div class="footer-icon">
+                <a href=""><img src="Assets/icons/call.png" alt=""></a>
+            </div>
+                       
+        </div>
+    </footer>
+
+    <script>
+        var links = document.querySelectorAll('.title-links');
+        var contents = document.querySelectorAll('.content');
+    
+        function opentab(tabname) {
+            links.forEach(link => {
+                link.classList.remove("active-link");
+            });
+    
+            contents.forEach(content => {
+                content.classList.remove("active-tab");
+            });
+    
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>

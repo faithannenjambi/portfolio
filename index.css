@@ -1,0 +1,318 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body
+{
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+nav
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 200px;
+    background-color: #000000;
+    border-bottom: 1px solid #F39C12;
+}
+
+.navigations
+{
+    display: flex;
+    gap: 30px;
+}
+.navigations a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navigations a:hover 
+{
+    color: #F39C12;
+}
+
+.intro
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+} 
+
+.intro-text, .intro-text span
+{
+    color: #ffffff;
+    font-family: "Kode Mono", monospace;
+    font-size: 3.0rem;
+    font-weight: 600;
+}
+
+.intro-text span
+{
+    color: #F39C12;
+}
+
+.btn
+{
+    text-decoration: none;
+    border: 1px solid #F39C12;
+    padding: 10px 30px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.btn:hover
+{
+    border: 2px solid #F39C12;
+}
+
+.icons
+{
+    display: flex;
+    gap: 30px;
+}
+
+.icon,.footer-icon
+{
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease-out;
+}
+
+.icon img
+{
+    width: 100%;
+}
+
+.icon:hover,.footer-icon:hover
+{
+    transform: scale(1.5);
+}
+
+.section2
+{
+    height: 100vh;
+    padding: 0 200px;
+    display: flex;
+}
+
+.header-text
+{
+    font-size: 3.6rem;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+.about-text p
+{
+    line-height: 2;
+}
+
+.about-text
+{
+    flex-basis: 50%;
+}
+
+.about-image
+{
+    width: 700px;
+    height: 500px;
+}
+
+.about-image img
+{
+    width: 100%;
+}
+
+.title
+{
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.title-links
+{
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+}
+
+.title-links::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #F39C12;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.title-links.active-link::after
+{
+    width: 50%;
+}
+
+.content ul li
+{
+    list-style: none;
+    padding: 10px 0;
+}
+
+.content ul li span
+{
+    color: #f39C12;
+    font-size: 1rem;
+}
+
+.content
+{
+    display: none;
+}
+
+.content.active-tab
+{
+    display: block;
+}
+
+.section3
+{
+    height: 100vh;
+    padding: 0 200px;
+}
+
+.projects
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.project-img
+{
+    height: 300px;
+}
+
+.project-img img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.subtext
+{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #F39C12;
+}
+
+.subtext:hover
+{
+    color: #ffffff;
+}
+
+.small-text
+{
+    font-size: 1rem;
+    padding: 10px 0;
+}
+
+.project-btn
+{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.section4
+{
+    height: 100vh;
+    padding: 0 200px;
+}
+
+.center 
+{
+    text-align: center;
+}
+
+form label
+{
+    display: none;
+}
+
+form input, textarea
+{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+}
+
+.contact-form
+{
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 50px;
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(100px);
+}
+
+form
+{
+    padding: 50px 100px 100px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form-btn
+{
+    border:1px solid #F39C12;
+    width: 70%;
+    margin: auto;
+    background-color: transparent;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 20px 0;
+    background-image: linear-gradient(to right, #000000,#f39c12,#000000, #000000,#f39c12,#000000);
+}
+
+.footer-icons
+{
+    display: flex;
+    gap: 30px;
+}
+
+.footer-icon 
+{
+    width: 20px;
+    height: 20px;
+}
+
+.footer-icon  img
+{
+    width: 100%;
+}
