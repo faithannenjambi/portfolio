@@ -20,6 +20,11 @@ nav
     justify-content: space-between;
     padding: 20px 200px;
     background-color: #000000;
+    position: fixed;
+}
+
+.border-bottom
+{
     border-bottom: 1px solid #F39C12;
 }
 
@@ -42,6 +47,7 @@ nav
 .intro
 {
     height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,13 +111,14 @@ nav
     height: 100vh;
     padding: 0 200px;
     display: flex;
+    align-items: center;
 }
 
 .header-text
 {
     font-size: 3.6rem;
     font-weight: 700;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 
 .about-text p
@@ -126,8 +133,10 @@ nav
 
 .about-image
 {
+    flex-basis: 50%;
     width: 700px;
     height: 500px;
+    align-items: center;
 }
 
 .about-image img
@@ -203,9 +212,19 @@ nav
     padding-top: 50px;
 }
 
+.project
+{
+    border: 1px solid  rgba(255, 255, 255, 0.233);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .project-img
 {
-    height: 300px;
+    height: 250px;
 }
 
 .project-img img
@@ -219,6 +238,7 @@ nav
     text-decoration: none;
     font-size: 1.2rem;
     color: #F39C12;
+    text-align: center;
 }
 
 .subtext:hover
@@ -230,6 +250,7 @@ nav
 {
     font-size: 1rem;
     padding: 10px 0;
+    text-align: center;
 }
 
 .project-btn
@@ -241,8 +262,9 @@ nav
 
 .section4
 {
-    height: 100vh;
+    height: 80vh;
     padding: 0 200px;
+    margin-bottom: 50px;
 }
 
 .center 
@@ -261,16 +283,16 @@ form input, textarea
     padding: 10px;
     width: 100%;
     background-color: transparent;
-    border: 1px solid #ffffff;
+    border: 1px solid  rgba(255, 255, 255, 0.233);
 }
 
 .contact-form
 {
-    width: 50%;
+    width: 70%;
     margin: auto;
     border-radius: 10px;
     margin-top: 50px;
-    border: 1px solid #ffffff;
+    border: 1px solid #ffffff60;
     backdrop-filter: blur(100px);
 }
 
@@ -315,4 +337,152 @@ footer
 .footer-icon  img
 {
     width: 100%;
+}
+
+/*Responsive design*/
+
+@media(max-width:600px)
+{
+    .display
+    {
+        display: none;
+    }
+
+    nav 
+    {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .intro
+    {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    .intro-text, .intro-text span
+    {
+        font-size: 2.5rem;
+    }
+    .intro-text span
+    {
+        display: block;
+    }
+
+    .section2
+    {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .about-text
+    {
+        flex-basis: 100%;
+    }
+    .about-image
+    {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding-top: 30px;
+    }
+    .section3
+    {
+        height: auto;
+        padding: 0 20px;
+    }
+    .projects
+    {
+        grid-template-columns: repeat(1,1fr);
+        gap: 50px;
+    }
+    .section4
+    {
+        height: auto;
+        padding: 0 20px;
+    }
+    .contact-form
+    {
+        width: 100%;
+    }
+    form
+    {
+        padding: 25px 35px 35px 35px;
+    }
+    
+}    
+
+@media(max-width:1000px)
+{
+    .display
+    {
+        display: none;
+    }
+
+    nav 
+    {
+        justify-content: center;
+        padding: 20px 50px;
+    }
+    .navigations
+    {
+        gap: 50px;
+    }
+    .section2
+    {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 0 50px;
+    }
+    .about-text
+    {
+        flex-basis: 100%;
+    }
+    .about-image
+    {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding-top: 30px;
+    }
+    .section3
+    {
+        height: auto;
+        padding: 0 50px;
+    }
+    .projects
+    {
+        grid-template-columns: repeat(1,1fr);
+        gap: 50px;
+    }
+    .project-img
+    {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .section4
+    {
+        height: auto;
+        padding: 0 50px;
+        margin-bottom: 50px;
+    }
+    .contact-form
+    {
+        width: 100%;
+    }
+    form
+    {
+        padding: 25px 35px 35px 35px;
+    }
+
+}
+
+@media (max-width:1440px)
+{
+    .section2, .section3, .section4
+    {
+        height: auto;
+    }
 }

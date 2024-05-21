@@ -9,20 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="Assets/icons/favicon.ico">
 </head>
 <body>
     
-    <div class="section1">
+    <div class="section1" id="home">
 
-        <nav>
+        <nav class="border-bottom" id="navbar">
 
-            <div></div>
+            <div class="display"></div>
 
             <div class="navigations">
-                <a href="">HOME</a>
-                <a href="">ABOUT</a>
-                <a href="">PROJECTS</a>
-                <a href="">CONTACT</a>
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT ME</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#contact">CONTACT</a>
             </div>
         </nav>
 
@@ -37,20 +38,26 @@
 
             <div class="icons">
                 <div class="icon">
-                    <a href=""><img src="Assets/icons/github.png" alt="github icon"></a>
+                    <a href="https://github.com/faithannenjambi" target="_blank" rel="noopener noreferrer">
+                        <img src="Assets/icons/github.png" alt="github icon">
+                    </a>
                 </div>
                 <div class="icon">
-                    <a href=""><img src="Assets/icons/linkedin.png" alt="linkedin icon"></a>                   
+                    <a href="https://www.linkedin.com/in/faith-anne-njambi-9b1440269/" target="_blank" rel="noopener noreferrer">
+                        <img src="Assets/icons/linkedin.png" alt="linkedin icon">
+                    </a>                   
                 </div>
                 <div class="icon">
-                    <a href=""><img src="Assets/icons/email.png" alt="email icon"></a>                   
+                    <a href="mailto:mburufaithanne@gmail.com"target="_blank" rel="noopener noreferrer">
+                        <img src="Assets/icons/email.png" alt="email icon">
+                    </a>                   
                 </div>
             </div>
 
         </div>
     </div>
 
-    <div class="section2">
+    <div class="section2" id="about">
         <div class="about-text">
             <p class="header-text">About Me</p>
             <p>
@@ -105,44 +112,50 @@
         </div>
     </div>
 
-    <div class="section3">
+    <div class="section3" id="projects">
 
-        <p class="header-text">Projects</p>
+        <p class="header-text center ">Projects</p>
 
         <div class="projects">
             <div class="project">
 
                 <div class="project-img">
-                    <a href=""><img src="Assets/jewelrysite.png" alt=""></a>
+                    <a href="https://github.com/faithannenjambi/jewellery-store" target="_blank" rel="noopener noreferrer">
+                        <img src="Assets/jewelrysite.png" alt="">
+                    </a>
                 </div>
-                <a class="subtext" href="">Jewelry Online Shop Website</a>
+                <a class="subtext" href="https://github.com/faithannenjambi/jewellery-store" target="_blank" rel="noopener noreferrer">Jewelry Online Shop Website</a>
                 <p class="small-text">Website for a Jewelry shop</p>
             </div>
             <div class="project">
 
                 <div class="project-img">
-                    <a href=""><img src="Assets/gasapp.png" alt=""></a>                  
+                    <a href="https://github.com/faithannenjambi?tab=repositories" target="_blank" rel="noopener noreferrer">
+                        <img src="Assets/gasapp.png" alt="">
+                    </a>                  
                 </div>
-                <a class="subtext" href="">Gas Refill Ordering App</a>
+                <a class="subtext" href="https://github.com/faithannenjambi?tab=repositories" target="_blank" rel="noopener noreferrer">Gas Refill Ordering App</a>
                 <p class="small-text">Simple app to order for gas online</p>
             </div>
             <div class="project">
 
                 <div class="project-img">
-                    <a href=""><img src="Assets/gassite.png" alt=""></a>                  
+                    <a href="https://github.com/faithannenjambi?tab=repositories" target="_blank" rel="noopener noreferrer">
+                        <img src="Assets/gassite.png" alt="">
+                    </a>                  
                 </div>
-                <a class="subtext" href="">Gas Refill Ordering - Website</a>
+                <a class="subtext" href="https://github.com/faithannenjambi?tab=repositories" target="_blank" rel="noopener noreferrer">Gas Refill Ordering - Website</a>
                 <p class="small-text">Website for a Gas Ordering App</p>
             </div>
         </div>
 
         <div class="project-btn">
-            <a href="" class="btn">See more</a>
+            <a href="https://github.com/faithannenjambi?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn">See more</a>
         </div>
         
     </div>
 
-    <div class="section4">
+    <div class="section4" id="contact">
 
         <p class="header-text center">Contact me</p>
 
@@ -179,19 +192,25 @@
 
         <div class="footer-icons">
             <div class="footer-icon">
-                <a href=""><img src="Assets/icons/linkedin.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/faith-anne-njambi-9b1440269/" target="_blank" rel="noopener noreferrer">
+                    <img src="Assets/icons/linkedin.png" alt="">
+                </a>
             </div>
             <div class="footer-icon">
-                <a href=""><img src="Assets/icons/email.png" alt=""></a>
+                <a href="mailto:mburufaithanne@gmail.com" target="_blank" rel="noopener noreferrer"><img src="Assets/icons/email.png" alt=""></a>
             </div>
             <div class="footer-icon">
-                <a href=""><img src="Assets/icons/call.png" alt=""></a>
+                <a href="https://wa.me/254714349966" target="_blank" rel="noopener noreferrer"><img src="Assets/icons/whatsapp.png" alt=""></a>
+            </div>
+            <div class="footer-icon">
+                <a href="tel:+254714349966"><img src="Assets/icons/call.png" alt=""></a>
             </div>
                        
         </div>
     </footer>
 
     <script>
+
         var links = document.querySelectorAll('.title-links');
         var contents = document.querySelectorAll('.content');
     
@@ -206,6 +225,25 @@
     
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        window.onscroll = () => 
+        {
+            scroll_function();
+        }
+
+        function scroll_function()
+        {
+            var nav_bar = document.querySelector("#navbar");
+
+            if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
+            {
+                nav_bar.classList.remove("border-bottom");
+            }
+            else
+            {
+                nav_bar.classList.add("border-bottom");
+            }
         }
     </script>
 </body>
