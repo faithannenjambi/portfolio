@@ -32,6 +32,7 @@ nav
 {
     display: flex;
     gap: 30px;
+    position: relative;
 }
 .navigations a
 {
@@ -106,6 +107,7 @@ nav
     transform: scale(1.5);
 }
 
+/*Section 2*/
 .section2
 {
     height: 100vh;
@@ -198,6 +200,8 @@ nav
     display: block;
 }
 
+/*section 3*/
+
 .section3
 {
     height: 100vh;
@@ -260,6 +264,7 @@ nav
     justify-content: center;
 }
 
+/*section 4*/
 .section4
 {
     height: 80vh;
@@ -342,15 +347,9 @@ footer
 /*Responsive design*/
 
 @media(max-width:600px)
-{
-    .display
-    {
-        display: none;
-    }
-
+{   
     nav 
     {
-        justify-content: center;
         padding: 20px;
     }
 
@@ -416,10 +415,6 @@ footer
 
 @media(max-width:1000px)
 {
-    .display
-    {
-        display: none;
-    }
 
     nav 
     {
