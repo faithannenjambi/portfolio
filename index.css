@@ -56,6 +56,22 @@ nav
     gap: 50px;
 } 
 
+.intro-image
+{
+    width: 200px;
+    height: 200px;
+}
+
+.intro-image img
+{
+    width: 100%;
+}
+
+.hide-intro-image
+{
+    display: none;
+}
+
 .intro-text, .intro-text span
 {
     color: #ffffff;
@@ -359,6 +375,11 @@ footer
         padding: 20px;
         text-align: center;
     }
+
+    .hide-intro-image
+    {
+        display: block;
+    }
     .intro-text, .intro-text span
     {
         font-size: 2.5rem;
@@ -382,6 +403,7 @@ footer
     }
     .about-image
     {
+        display: none;
         width: 100%;
         height: auto;
         margin: auto;
