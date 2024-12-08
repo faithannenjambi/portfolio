@@ -1,0 +1,65 @@
+.big-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+
+.project-container
+{
+    padding: 50px 0;
+}
+
+.organisation
+{
+    padding: 20px 0;
+}
+
+ul
+{
+    padding-left: 20px;
+}
+
+li,p
+{
+    line-height: 1.8;
+}
+
+.project-img
+{
+    margin: 20px 0;
+    height: 300px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.flex
+{
+    display: flex;
+    gap: 20px;
+}
+
+.project-img img
+{
+    width: 100%;
+}
+
+.header-text
+{
+    color: #f39c12;
+}
+
+@media screen and (max-width:600px), screen and (max-width:1000px)
+{
+    .header-text
+    {
+        font-size: 2.0rem;
+    }
+    .project-img
+    {
+        height: auto;
+        flex-direction: column;
+    }
+}

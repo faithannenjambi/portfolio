@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faith Njambi</title>
+    <title>Faith Mburu</title>
     <script src="https://kit.fontawesome.com/71c92c08a5.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="Assets/icons/favicon.ico">
 </head>
@@ -17,9 +18,22 @@
 
         <nav class="border-bottom" id="navbar">
 
-            <div></div>
+            <div class="mylogo">
+                <a href="#home"><p class="name-logo">FAITH MBURU</p></a>
+            </div>
 
             <div class="navigations">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT ME</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+
+            <div class="mobile-menu-icon hide-menu-icon" id="mobile-menu-icon">
+                <img src="Assets/icons/menu.png" alt="menu-icon" width="100%">
+            </div>
+
+            <div class="mobile-navigations hide-mobile-navigations" id="mobile-navigations">
                 <a href="#home">HOME</a>
                 <a href="#about">ABOUT ME</a>
                 <a href="#projects">PROJECTS</a>
@@ -29,15 +43,12 @@
 
         <div class="intro">
 
-            <div class="intro-image hide-intro-image">
-                <img src="Assets/rep.png" alt="">
-            </div>
             <div>
-                <p class="intro-text">NJAMBI FAITH <span>A WEB DEVELOPER</span></p>
+                <p class="intro-text">HELLO, I'M FAITH<br> <span>Delivering innovative solutions in Data, Design & AI.</span></p>
             </div>
 
             <div>
-                <a class="btn" href="https://drive.google.com/file/d/1qUxfIIoyheuAWjJbp1I3mH8Cc4Q9oldo/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a class="btn" href="https://docs.google.com/document/d/1MoYZl12ZjZromF2Ogxctxm3XkwbTATBI9neq9K85CME/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
 
             <div class="icons">
@@ -62,19 +73,22 @@
     </div>
 
     <div class="section2" id="about">
+
+        <div class="about-image">
+            <img src="Assets/profileImage.jpg" alt="profile pic">
+        </div>
+
         <div class="about-text">
-            <p class="header-text">About Me</p>
             <p>
-                I'm Njambi <i class="fa-regular fa-face-smile"></i> , a lover of life.
-                <br>Professionally, I am a web developer and a data enthusiast who combines
+                I'm Faith <i class="fa-regular fa-face-smile"></i> , a lover of life.
+                <br>Professionally, I am a data analyst and a creative technologist who combines
                 curiosity, creativity, and analytical thinking to tackle big 
                 picture challenges. <br>
                 I am passionate about women empowerment and I actively sort ways to
                 contribute in shaping a feminist digital future. <br>
                 Beyond the professional realm, I am a lover of poetry. I enjoy this art 
                 of capturing emotions and ideas in a rythmic language, creating beauty 
-                through words. I am a part-time story teller, full-time sunset/sunrise 
-                enthusiast and occasional dance floor conqueror.
+                through words.
             </p>
 
             <div class="title">
@@ -85,35 +99,30 @@
             <div class="content active-tab" id="skills">
 
                 <ul>
-                    <li><span>HTML,CSS,JavaScript</span> <br>
-                    Creating and styling interactive web pages</li>
-                    <li><span>Responsive Design</span> <br>
-                    Designing websites to adapt to various screen sizes and devices</li>
-                    <li><span>Git & Github</span> <br>
+                    <li><span>DATA</span> <br>
+                    Python(Pandas,Numpy,Matplotlib), SQL, Power BI, Data Cleaning, EDA</li>
+                    <li><span>AI</span> <br>
+                    Machine Learning(Scikit-learn), NLP, Predictive Modelling</li>
+                    <li><span>DESIGN</span> <br>
+                    Product Design, Figma, Wireframing, Canva, User Research,Web Design</li>
+                    <li><span>GIT & GITHUB</span> <br>
                     Managing codebase and collaborating with team members</li>
-                    <li><span>Front-end Design Tools(Figma, Adobe XD,Canva)</span> <br>
-                    Creating wireframes, prototypes and UI/UX designs</li>
-                    <li><span>Perfomance Optimization</span></li>
-                    <li><span>Search Engine Optimization</span></li>
                 </ul>
             </div>
 
             <div class="content" id="education">
 
                 <ul>
-                    <li><span>2024</span> <br> Data Analytics Training (ongoing) <br>
-                    ALX, Nairobi</li>
+                    <li><span>2024</span> <br> Data Analytics<br>
+                    ALX</li>
                     <li><span>2024</span> <br> Fullstack Development Bootcamp <br>
                     Visiola Foundation</li>
-                    <li><span>2023</span> <br> Bachelor of Computer Applications <br>
-                    KIIT University, India</li>
+                    <li><span>2023</span> <br> Bachelor of Computer Application<br>
+                    Kalinga Institute of Industrial Technology</li>
                 </ul>
             </div>
         </div>
 
-        <div class="about-image">
-            <img src="Assets/about_me.jpg" alt="profile pic">
-        </div>
     </div>
 
     <div class="section3" id="projects">
@@ -124,37 +133,133 @@
             <div class="project">
 
                 <div class="project-img">
-                    <a href="https://github.com/faithannenjambi/jewellery-store" target="_blank" rel="noopener noreferrer">
-                        <img src="Assets/jewelrysite.png" alt="">
+                    <img src="Assets/ML.jpg" alt="">
+                </div>
+
+                <div class="layer">
+                    <h3>Machine Learning-Based Solar Panel Tilt Optimization</h3>
+                    <p>
+                        An AI-driven solar panel tilt optimization aiming to enhance solar 
+                        energy production.
+                    </p>
+                    <a href="https://colab.research.google.com/drive/1-Jsp_JE2yGczBqHJ9FOO8t605NLtuNm-?usp=sharing" target="_blank" rel="noreferrer noopener">
+                        <i class="fa-solid fa-up-right-from-square"></i>
                     </a>
                 </div>
-                <a class="subtext" href="https://github.com/faithannenjambi/jewellery-store" target="_blank" rel="noopener noreferrer">Jewelry Online Shop Website</a>
-                <p class="small-text">Website for a Jewelry shop</p>
+            </div>
+
+            <div class="project">
+
+                <div class="project-img">
+                    <img src="Assets/consumer-insights.jpg" alt="">
+                </div>
+
+                <div class="layer">
+                    <h3>Consumer Insights Analysis</h3>
+                    <p>
+                        A comprehensive analysis of Beats by Dre's products, specifically the Beats Pill, 
+                        in comparison to competing products in the market.
+                    </p>
+                    <a href="https://colab.research.google.com/drive/1gdCcGwp2Uo0tecnNQsrhHaIjIPNM9xSL?usp=sharing" target="_blank" rel="noreferrer noopener">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project">
+
+                <div class="project-img">
+                    <img src="Assets/maji-ndogo.jpg" alt="">
+                </div>
+
+                <div class="layer">
+                    <h3>Maji Ndogo Water Project Dashboard</h3>
+                    <p>
+                        An interactive Power BI dashboard to track national water improvement initiatives, 
+                        providing metrics on water access, impact, and budget allocation
+                    </p>
+                    <a href="majindogo.html">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
             </div>
             <div class="project">
 
                 <div class="project-img">
-                    <a href="https://github.com/faithannenjambi/gas-refill-ordering-webapp" target="_blank" rel="noopener noreferrer">
-                        <img src="Assets/gasapp.png" alt="">
-                    </a>                  
+                    <img src="Assets/pizza-sales.png" alt="">
                 </div>
-                <a class="subtext" href="https://github.com/faithannenjambi/gas-refill-ordering-webapp" target="_blank" rel="noopener noreferrer">Gas Refill Ordering App</a>
-                <p class="small-text">Simple app to order for gas online</p>
+
+                <div class="layer">
+                    <h3>Pizza Sales Analysis</h3>
+                    <p>
+                        An interactive dashboard in Power BI, 
+                        visualizing product performance metrics and supporting data-driven decisions for sales optimization.
+                    </p>
+                    <a href="pizzasales.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
             </div>
             <div class="project">
 
                 <div class="project-img">
-                    <a href="https://github.com/faithannenjambi/gas-refill-ordering-webapp" target="_blank" rel="noopener noreferrer">
-                        <img src="Assets/gassite.png" alt="">
-                    </a>                  
+                    <img src="Assets/s-thinking.png" alt="">
                 </div>
-                <a class="subtext" href="https://github.com/faithannenjambi/gas-refill-ordering-webapp" target="_blank" rel="noopener noreferrer">Gas Refill Ordering - Website</a>
-                <p class="small-text">Website for a Gas Ordering App</p>
-            </div>
-        </div>
 
-        <div class="project-btn">
-            <a href="https://github.com/faithannenjambi?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn">See more</a>
+                <div class="layer">
+                    <h3>Strategic & Experience Design</h3>
+                    <p>
+                        Built a research plan, developed primary research tools, 
+                        and reviewed data to understand the target customers' attitudes, needs and beliefs
+                    </p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+
+                <div class="project-img">
+                    <img src="Assets/product-design.png" alt="">
+                </div>
+
+                <div class="layer">
+                    <h3>Product Design</h3>
+                    <p>
+                        Added a new feature and iterated on an existing product screen
+                        to transform a user's experience
+                    </p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+
+                <div class="project-img">
+                    <img src="Assets/gas-app.png" alt="">
+                </div>
+
+                <div class="layer">
+                    <h3>Gas Refill WebApp</h3>
+                    <p>
+                        A perfectly designed webapp that allows users to
+                        order for gas online and have it delivered to their
+                        doorstep.
+                    </p>
+                    <a href="gasApp.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+
+                <div class="project-img">
+                    <img src="Assets/cafe.png" alt="">
+                </div>
+
+                <div class="layer">
+                    <h3>Cafe Website</h3>
+                    <p>
+                        A perfectly designed website that allows users to
+                        look at the cafe's menu at the comfort of their homes
+                        and place an order.
+                    </p>
+                    <a href="cafe.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
         </div>
         
     </div>
@@ -191,7 +296,7 @@
     <footer>
 
         <div>
-            <p class="small-text">&copy; Faith Anne Njambi</p>
+            <p class="small-text">&copy; 2024 Faith Mburu</p>
         </div>
 
         <div class="footer-icons">
@@ -213,42 +318,6 @@
         </div>
     </footer>
 
-    <script>
-
-        var links = document.querySelectorAll('.title-links');
-        var contents = document.querySelectorAll('.content');
-    
-        function opentab(tabname) {
-            links.forEach(link => {
-                link.classList.remove("active-link");
-            });
-    
-            contents.forEach(content => {
-                content.classList.remove("active-tab");
-            });
-    
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-        window.onscroll = () => 
-        {
-            scroll_function();
-        }
-
-        function scroll_function()
-        {
-            var nav_bar = document.querySelector("#navbar");
-
-            if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
-            {
-                nav_bar.classList.remove("border-bottom");
-            }
-            else
-            {
-                nav_bar.classList.add("border-bottom");
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
